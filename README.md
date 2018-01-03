@@ -33,5 +33,5 @@ Once the databse set up properly to create already designed tables using SQLAlch
 
 <h3>Authors</h3><hr/>
 <ul>
-  <li>Mbu Atang Junior Gerald: Built to support my ReactJS Todos application. https://github.com/mbugerald/react-todos </li>
+  <li>Mbu Atang Junior Gerald: Built to support my ReactJS Todos application. https://github.com/mbugerald/react-redux-todo </li>
 </ul>
