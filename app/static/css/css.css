@@ -1,0 +1,54 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+.button {
+    background: #90EE90;
+    border: none;
+    padding: 1rem;
+    color: #000000;
+}
+
+ul {
+    list-style-type: none;
+}
+body {
+    background: lemonchiffon;
+}
+
+nav {
+    display: flex;
+    background: lightgreen;
+    padding: 1rem;
+}
+
+nav ul {
+    max-width: 600px;
+    flex: 1;
+    display: flex;
+    margin: auto;
+    padding: 0;
+}
+
+nav ul li {
+    flex: 1;
+    padding: 0.24rem;
+    color: #000000;
+    text-align: center;
+    cursor: pointer;
+    transition: transform ease-in-out;
+}
+
+nav ul li:hover {
+    transform: scaleY(1.6);
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    nav ul li {
+        text-align: left;
+    }
+}

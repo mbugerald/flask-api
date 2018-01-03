@@ -1,0 +1,8 @@
+{% macro render_field(field) %}
+        <ul>
+            <li>
+                <dt>{{ field.label }}</dt>
+                {{ field(**kwargs)|safe }}
+            </li>
+        </ul>
+{% endmacro %}

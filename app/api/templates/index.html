@@ -1,0 +1,15 @@
+{% extends 'cover.html' %}
+{% from 'helpers/form.html' import render_field %}
+{% block main_blog %}
+    <section>
+        <form method="post" action="{{ url_for('api.SiteViews:user_home_view') }}" enctype="multipart/form-data">
+            {{ create_db_form.csrf_token }}
+            {{ render_field(create_db_form.create, value="Create Tables", class="button") }}
+            <div class="message_feedback">
+                {% for message in get_flashed_messages() %}
+                    <p>{{ message }}</p>
+                {% endfor %}
+            </div>
+        </form>
+    </section>
+{% endblock %}

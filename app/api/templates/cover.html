@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/css.css') }}">
+</head>
+<body>
+    <header>
+        <h2>SIMPLE API</h2>
+    </header>
+    <nav>
+        <ul>
+            <li>Documentation</li>
+            <li>Information</li>
+        </ul>
+    </nav>
+    {% block main_blog %}{% endblock %}
+    <footer></footer>
+    <script src="{{ url_for('static', filename='../webapp') }}"></script>
+</body>
+</html>
